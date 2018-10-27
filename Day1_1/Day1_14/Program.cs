@@ -22,6 +22,7 @@ namespace Day1_14
             Console.WriteLine("배열의 합은 {0}", sum);
 
             sum = 0;
+            
             foreach( int number in myArray)
             {
                 sum += number;
