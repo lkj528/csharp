@@ -1,0 +1,25 @@
+﻿using System;
+struct Emp
+{
+    public int id;
+    public string name;
+}
+
+class EmpTest
+{
+    public static void Main()
+    {
+        Emp e; // struct는 value 타입이기 때문에 new 필요 없음
+        e.id = 1;
+        e.name = "1길동";
+        Console.WriteLine("사번: {0}", e.id);
+        Console.WriteLine("이름: {0}", e.name);
+
+        Emp e1 = new Emp(); // new 하더라도 스택에 저장됨.
+
+        e1.id = 2;
+        e1.name = "2길동";
+        Console.WriteLine("사번: {0}", e1.id);
+        Console.WriteLine("이름: {0}", e.name);
+    }
+}
